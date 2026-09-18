@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Network_login_LNMIIT",
+    "description": "An extention made to ease off the login into wifi portal",
+    "homepage_url": "https://github.com/Ridham0008/Network_login_LNMIIT.git",
+    "version": "1.0",
+    "content_scripts": [
+        { 
+        "matches": ["*://172.22.2.6/connect/*"],
+        "js": ["myscript.js"]
+        }
+    ],
+    "action": {
+        "default_icon": "Extension_logo.png",
+        "default_title": "Click here after opening portal in current tab.",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://172.22.2.6/connect/*"
+    ]
+}
