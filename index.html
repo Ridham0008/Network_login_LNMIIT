@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNMIIT Auto-Connect</title>
+    <style>
+      /* Basic reset for clean layout */
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 250px; /* Adjusted for new layout */
+        width: 380px;  /* Adjusted for new layout */
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f4f7f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      /* Logo container */
+      .logo-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Status section styling */
+      .status-container {
+        text-align: center;
+        padding: 0 20px;
+        margin-top: 10px;
+      }
+
+      h3.main-title {
+        color: #00796b; /* Teal accent */
+        margin: 0 0 5px 0;
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+
+      p.status-text {
+        color: #546e7a;
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+
+      p.active-status {
+        color: #2e7d32; /* Green status */
+        font-weight: bold;
+        margin-top: 8px;
+        font-size: 0.95rem;
+      }
+
+      /* Footer styling */
+      .footer {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 15px 0;
+        margin-top: auto; /* Pushes to bottom */
+        border-top: 1px solid #e0e0e0;
+        text-align: center;
+      }
+
+      p.credits {
+        color: #78909c;
+        margin: 0;
+        font-size: 0.8rem;
+      }
+
+      p.credits a {
+        color: #00796b;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      p.credits a:hover {
+        text-decoration: underline;
+      }
+
+      /* Hidden button */
+      button#fillForm {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Logo section -->
+    <div class="logo-container">
+      <!-- Make sure Extension is in the same folder -->
+      <img src="Extension_logo.png" alt="LNMIIT Auto-Connect Logo" width="80" height="80">
+    </div>
+
+    <!-- Main status area -->
+    <div class="status-container">
+      <h3 class="main-title">LNMIIT Auto-Connect</h3>
+      <p class="status-text">Your connection is automatically being managed.</p>
+      <p class="active-status">Active: Status: Logged in (Next refresh in 2 hours 55 minutes)</p>
+    </div>
+
+    <!-- Footer with credits -->
+    <div class="footer">
+      <p class="credits">Git by Ridham Patel. Support this project on <a href="https://github.com/Ridham0008/Network_login_LNMIIT.git" target="_blank">GitHub</a>.</p>
+    </div>
+
+    <!-- Hidden button triggered by action.js -->
+    <button id='fillForm'>Fill form</button>
+    <script src='action.js'></script>
+  </body>
+</html>
